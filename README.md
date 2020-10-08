@@ -41,19 +41,20 @@ self.url_base_task
   -You need to set all required data to authenticate against mail server and feng.
   
   ```
-  mail = {
-        'from' : '',                         # From mail account
-        'to' : '',                           # Receiver account
-        'server' : '',                       # From mail server
-        'pwd' : '',                          # From mail password
-        'port' : '465',                      # From port (default SSL 465)
-        'subject' : ''                       # Mail subject
+mail_configuration = {
+        'from' : '',                                          # From mail account
+        'to' : '',                                            # Receiver @dinahosting.com account
+        'server' : '',                                        # From mail server
+        'pwd' : '',                                           # From mail password
+        'port' : '',                                          # From port
+        'subject' : ''                                        # Mail subject
         }
 
-  feng = {
-        'user' : '',                          # Feng user
-        'pwd' : ''                            # Feng password
-         }
+feng_configuration = {
+        'user' : '',                                          # Feng user
+        'pwd' : '',                                           # Feng password
+        'domain' : ''                                         # Feng domain
+       }
 ```
 
 It sends a mail every 10 minutes if exists any pending task.
