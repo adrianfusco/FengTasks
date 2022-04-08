@@ -9,4 +9,3 @@ class Task:
 
     def url(self: object):
         return self.__url
-
